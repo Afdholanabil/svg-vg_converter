@@ -17,3 +17,9 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/
+    - assets/svg/
+    - assets/vg/
+    - assets/vg/1/
+    - assets/vg/1/env1/
