@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 133.08 163.98">
+  <defs>
+    <clipPath id="clippath">
+      <path d="M66.54,1C30.4,1,1,30.4,1,66.54v86.44c0,5.52,4.48,10,10,10h111.08c5.52,0,10-4.48,10-10v-86.44C132.08,30.4,102.68,1,66.54,1Z" style="fill: none;"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="66.54" y1="-43.22" x2="66.54" y2="222.06" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a7bfee"/>
+      <stop offset=".62" stop-color="#d4e5ff"/>
+    </linearGradient>
+    <linearGradient id="GradientFill_3" data-name="GradientFill 3" x1="112.39" y1="53.5" x2="31.55" y2="137.21" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b3cce5"/>
+      <stop offset="1" stop-color="#e0eaf8"/>
+    </linearGradient>
+  </defs>
+  <g style="isolation: isolate;">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_1-2" data-name="Layer 1">
+        <g>
+          <g style="clip-path: url(#clippath);">
+            <g>
+              <path d="M-2.48,214.17h138.05V28.54C131.59-47.55,11.94-64.48-2.48,26.29v187.88Z" style="fill: url(#linear-gradient); fill-rule: evenodd;"/>
+              <path d="M14.45,212.24h13.99V-21.22c-5.4,3.59-10.23,7.75-13.99,12.98v220.48Z" style="fill: #e4e9f5; fill-rule: evenodd; mix-blend-mode: screen; opacity: .2;"/>
+              <path d="M-.77,142.17L134.22,61.09v8.01L-.77,150.04v-7.87h0ZM-.77,132.47v3.93L134.5,55.09v-1.98S-.77,132.47-.77,132.47Z" style="fill: url(#GradientFill_3); fill-rule: evenodd; mix-blend-mode: screen; opacity: .67;"/>
+            </g>
+          </g>
+          <path d="M66.54,1C30.4,1,1,30.4,1,66.54v86.44c0,5.52,4.48,10,10,10h111.08c5.52,0,10-4.48,10-10v-86.44C132.08,30.4,102.68,1,66.54,1ZM21,66.54c0-23.42,17.77-42.76,40.54-45.26v121.7H21v-76.44ZM112.08,142.98h-40.54V21.28c22.77,2.5,40.54,21.84,40.54,45.26v76.44Z" style="fill: #f9e4e4; stroke: #f4a8ac; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

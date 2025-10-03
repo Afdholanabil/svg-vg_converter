@@ -23,3 +23,56 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/pet/
+    - assets/pet/1/env_1/
+    - assets/pet/1/env_1/item_decoration/
+    - assets/pet/1/resource/food/
+    - assets/pet/1/resource/groom/
+    - assets/pet/1/resource/toy/
+    - assets/pet/2/env_1/
+    - assets/pet/2/env_1/item_decoration/
+    - assets/pet/2/resource/food/
+    - assets/pet/2/resource/groom/
+    - assets/pet/2/resource/toy/
+    - assets/pet/3/env_1/
+    - assets/pet/3/env_1/item_decoration/
+    - assets/pet/3/resource/food/
+    - assets/pet/3/resource/groom/
+    - assets/pet/3/resource/toy/
+    - assets/pet/4/env_1/
+    - assets/pet/4/env_1/item_decoration/
+    - assets/pet/4/resource/food/
+    - assets/pet/4/resource/groom/
+    - assets/pet/4/resource/toy/
+    - assets/pet/5/env_1/
+    - assets/pet/5/env_1/item_decoration/
+    - assets/pet/5/resource/food/
+    - assets/pet/5/resource/groom/
+    - assets/pet/5/resource/toy/
+    - assets/pet_vg/
+    - assets/pet_vg/1/env_1/
+    - assets/pet_vg/1/env_1/item_decoration/
+    - assets/pet_vg/1/resource/food/
+    - assets/pet_vg/1/resource/groom/
+    - assets/pet_vg/1/resource/toy/
+    - assets/pet_vg/2/env_1/
+    - assets/pet_vg/2/env_1/item_decoration/
+    - assets/pet_vg/2/resource/food/
+    - assets/pet_vg/2/resource/groom/
+    - assets/pet_vg/2/resource/toy/
+    - assets/pet_vg/3/env_1/
+    - assets/pet_vg/3/env_1/item_decoration/
+    - assets/pet_vg/3/resource/food/
+    - assets/pet_vg/3/resource/groom/
+    - assets/pet_vg/3/resource/toy/
+    - assets/pet_vg/4/env_1/
+    - assets/pet_vg/4/env_1/item_decoration/
+    - assets/pet_vg/4/resource/food/
+    - assets/pet_vg/4/resource/groom/
+    - assets/pet_vg/4/resource/toy/
+    - assets/pet_vg/5/env_1/
+    - assets/pet_vg/5/env_1/item_decoration/
+    - assets/pet_vg/5/resource/food/
+    - assets/pet_vg/5/resource/groom/
+    - assets/pet_vg/5/resource/toy/
