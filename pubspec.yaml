@@ -15,7 +15,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
+  vector_graphics_compiler: ^1.1.19
 
 flutter:
   uses-material-design: true
@@ -24,4 +25,4 @@ flutter:
     - assets/svg/
     - assets/vg/
     - assets/vg/1/
-    - assets/vg/1/env1/
+    - assets/vg/1/env-cat/
