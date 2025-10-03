@@ -24,13 +24,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-<<<<<<< HEAD
-    - assets/
-    - assets/svg/
-    - assets/vg/
-    - assets/vg/1/
-    - assets/vg/1/env-cat/
-=======
     - assets/pet/
     - assets/pet/1/env_1/
     - assets/pet/1/env_1/item_decoration/
@@ -83,4 +76,3 @@ flutter:
     - assets/pet_vg/5/resource/food/
     - assets/pet_vg/5/resource/groom/
     - assets/pet_vg/5/resource/toy/
->>>>>>> 87a5111af131a0ad6026fa6944d647fac75fff8c
