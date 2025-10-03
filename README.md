@@ -5,11 +5,13 @@ A comprehensive Flutter tooling & viewer for batch conversion of SVG files to Fl
 ## Features
 
 - 🚀 **Batch Conversion**: Recursively convert entire directories of SVG files to VG format
+- 🎨 **Interactive Converter**: UI-based file picker for quick SVG to VG conversion
 - 📊 **Visual Comparison**: Side-by-side comparison viewer showing SVG vs VG rendering
 - 📈 **File Metrics**: Display file sizes, compression ratios, and quality statistics
 - 🎯 **High Quality Rendering**: Optimized rendering parameters for crystal-clear vector graphics
 - 💾 **Space Savings**: VG files are typically 40-60% smaller than SVG files
 - ⚡ **Performance**: VG format eliminates runtime XML parsing for better performance
+- 💿 **Export Capability**: Save converted VG files to any location
 
 ## Prerequisites
 
@@ -45,7 +47,42 @@ flutter:
 
 ## Usage
 
-### Step 1: Prepare Your SVG Files
+You have **three options** for converting and viewing SVG/VG files:
+
+### Option 1: Interactive Converter (UI) - NEW! 🎉
+
+Perfect for quick conversions and testing individual files.
+
+1. Run the app:
+   ```bash
+   flutter run -d windows  # or -d linux, -d macos
+   ```
+
+2. Click **"Interactive Converter"** from the home screen
+
+3. Click **"Pick SVG Files to Convert"**
+
+4. Select one or multiple SVG files from your file system
+
+5. View the conversion results with side-by-side comparison
+
+6. Click the **💾 Save** button to export VG files
+
+**Features:**
+- ✅ File picker integration for easy file selection
+- ✅ Multiple file selection support
+- ✅ Live SVG vs VG comparison
+- ✅ File size and compression metrics
+- ✅ Save VG files to any location
+- ✅ Remove individual results or clear all
+
+📖 **[Read the detailed Interactive Converter Guide →](CONVERTER_GUIDE.md)**
+
+### Option 2: Batch CLI Converter
+
+Best for converting entire directories and automation.
+
+#### Step 1: Prepare Your SVG Files
 
 Place all SVG files in the `assets/pet/` directory. The converter will recursively process all subdirectories.
 
@@ -63,7 +100,7 @@ assets/pet/
   └── ...
 ```
 
-### Step 2: Run the Batch Converter
+#### Step 2: Run the Batch Converter
 
 **Important**: Always run the batch converter from the project root directory.
 
@@ -88,25 +125,45 @@ dart run lib/batch_converter.dart assets/icons assets/icons_vg
 - Output: `assets/pet_vg/`
 - Maintains directory structure (mirrored output)
 
-### Step 3: View the Comparison
+### Option 3: Compare Assets Viewer
 
-Run the Flutter application:
-```bash
-flutter run -d windows  # or -d linux, -d macos
-```
+View and compare all SVG and VG files already in your project assets.
+
+1. Run the app:
+   ```bash
+   flutter run -d windows  # or -d linux, -d macos
+   ```
+
+2. Click **"Compare Assets"** from the home screen
 
 The app will display:
 - **Left Panel**: Original SVG files
 - **Right Panel**: Converted VG files
 - **Metrics**: File sizes, compression ratio, and statistics
 
-### Step 4: Update Assets (If Needed)
+## Conversion Method Comparison
+
+| Feature | Interactive Converter (UI) | Batch CLI Converter | Compare Assets |
+|---------|---------------------------|---------------------|----------------|
+| **Selection** | File picker (any location) | Recursive directory | Project assets only |
+| **Preview** | Live comparison ✅ | No preview ❌ | Live comparison ✅ |
+| **Save location** | User chooses | Auto mirror structure | N/A (view only) |
+| **Best for** | Testing, single files | Large batches | Verification |
+| **Speed** | Moderate | Fast | Instant (pre-converted) |
+| **Multiple files** | Yes (manual select) | Yes (automatic) | Yes (all at once) |
+
+**Recommendation**: Use **Interactive Converter** for testing → **Batch CLI** for production → **Compare Assets** for verification.
+
+## Update Workflow
 
 If you add or modify SVG files:
 
-1. Re-run the batch converter:
+1. Re-run the appropriate converter:
    ```bash
+   # For batch conversion
    dart run lib/batch_converter.dart
+   
+   # OR use Interactive Converter in the app
    ```
 
 2. Hot restart the app (press `R` in the Flutter terminal, or restart the app)
