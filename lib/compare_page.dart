@@ -25,7 +25,7 @@ class CompareSvgVgPage extends StatefulWidget {
 class _CompareSvgVgPageState extends State<CompareSvgVgPage> {
   late Future<List<_Pair>> _future;
   int _selectedPet = 1;
-  bool _showSvg = true;
+  bool _showSvg = false;
   bool _showVg = true;
 
   @override
