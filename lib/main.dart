@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:svg_vg_converter/pages/show_vg_pages.dart';
-import 'package:file_picker/file_picker.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:path_provider/path_provider.dart';
-import 'package:vector_graphics/vector_graphics.dart';
-import 'dart:io';
-import 'dart:typed_data';
+// import 'package:svg_vg_converter/pages/show_vg_pages.dart';
+import 'package:svg_vg_converter/pages/file_vg_viewer_page.dart';
+import 'package:svg_vg_converter/pages/file_svg_viewer_page.dart';
 import 'compare_page.dart';
 import 'converter_page.dart';
 
@@ -65,7 +61,35 @@ class HomePage extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 48),
-              
+                 // Converter Page Button
+              _MenuCard(
+                icon: Icons.upload_file,
+                title: 'Viewer File VG',
+                description: 'Pick VG files (.vg/.vg.bin) and view them',
+                color: Colors.pink,
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const FileVgViewerPage(),
+                    ),
+                  );
+                },
+              ),
+              _MenuCard(
+                icon: Icons.upload_file,
+                title: 'Viewer File SVG',
+                description: 'Pick SVG files and view them',
+                color: Colors.purple,
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const FileSvgViewerPage(),
+                    ),
+                  );
+                },
+              ),
               // Converter Page Button
               _MenuCard(
                 icon: Icons.upload_file,
