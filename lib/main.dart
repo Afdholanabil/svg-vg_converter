@@ -36,121 +36,123 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(24.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(
-                Icons.transform,
-                size: 80,
-                color: Theme.of(context).colorScheme.primary,
-              ),
-              const SizedBox(height: 24),
-              Text(
-                'SVG to Vector Graphics Converter',
-                style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 12),
-              Text(
-                'Convert SVG files to optimized VG format for Flutter',
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: Colors.grey.shade600,
-                    ),
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 48),
-                 // Converter Page Button
-              _MenuCard(
-                icon: Icons.upload_file,
-                title: 'Viewer File VG',
-                description: 'Pick VG files (.vg/.vg.bin) and view them',
-                color: Colors.pink,
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const FileVgViewerPage(),
-                    ),
-                  );
-                },
-              ),
-              _MenuCard(
-                icon: Icons.upload_file,
-                title: 'Viewer File SVG',
-                description: 'Pick SVG files and view them',
-                color: Colors.purple,
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const FileSvgViewerPage(),
-                    ),
-                  );
-                },
-              ),
-              // Converter Page Button
-              _MenuCard(
-                icon: Icons.upload_file,
-                title: 'Interactive Converter',
-                description: 'Pick SVG files and convert them to VG format',
-                color: Colors.blue,
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const ConverterPage(),
-                    ),
-                  );
-                },
-              ),
-              
-              const SizedBox(height: 16),
-              
-              // Compare Page Button
-              _MenuCard(
-                icon: Icons.compare,
-                title: 'Compare Assets',
-                description: 'Compare SVG and VG files in project assets',
-                color: Colors.green,
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const CompareSvgVgPage(),
-                    ),
-                  );
-                },
-              ),
-              
-              const SizedBox(height: 32),
-              
-              // Info card
-              Container(
-                padding: const EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  color: Colors.orange.shade50,
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: Colors.orange.shade200),
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.transform,
+                  size: 80,
+                  color: Theme.of(context).colorScheme.primary,
                 ),
-                child: Row(
-                  children: [
-                    Icon(Icons.info_outline, color: Colors.orange.shade700),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: Text(
-                        'For batch conversion, use CLI:\ndart run lib/batch_converter.dart',
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: Colors.orange.shade900,
+                const SizedBox(height: 24),
+                Text(
+                  'SVG to Vector Graphics Converter',
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 12),
+                Text(
+                  'Convert SVG files to optimized VG format for Flutter',
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                        color: Colors.grey.shade600,
+                      ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 48),
+                   // Converter Page Button
+                _MenuCard(
+                  icon: Icons.upload_file,
+                  title: 'Viewer File VG',
+                  description: 'Pick VG files (.vg/.vg.bin) and view them',
+                  color: Colors.pink,
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const FileVgViewerPage(),
+                      ),
+                    );
+                  },
+                ),
+                _MenuCard(
+                  icon: Icons.upload_file,
+                  title: 'Viewer File SVG',
+                  description: 'Pick SVG files and view them',
+                  color: Colors.purple,
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const FileSvgViewerPage(),
+                      ),
+                    );
+                  },
+                ),
+                // Converter Page Button
+                _MenuCard(
+                  icon: Icons.upload_file,
+                  title: 'Interactive Converter',
+                  description: 'Pick SVG files and convert them to VG format',
+                  color: Colors.blue,
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ConverterPage(),
+                      ),
+                    );
+                  },
+                ),
+                
+                const SizedBox(height: 16),
+                
+                // Compare Page Button
+                _MenuCard(
+                  icon: Icons.compare,
+                  title: 'Compare Assets',
+                  description: 'Compare SVG and VG files in project assets',
+                  color: Colors.green,
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const CompareSvgVgPage(),
+                      ),
+                    );
+                  },
+                ),
+                
+                const SizedBox(height: 32),
+                
+                // Info card
+                Container(
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: Colors.orange.shade50,
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.orange.shade200),
+                  ),
+                  child: Row(
+                    children: [
+                      Icon(Icons.info_outline, color: Colors.orange.shade700),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Text(
+                          'For batch conversion, use CLI:\ndart run lib/batch_converter.dart',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.orange.shade900,
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
